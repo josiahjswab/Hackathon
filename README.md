@@ -4,7 +4,7 @@ My submission for the SDCS hackathon project.
 
 ## Project Requirments
 
-* Utilize a minimum two API's of your choice.
+* Utilize two API's of your choice.
 * Complete the project withen 72 hours.
 
 ## API's Used
