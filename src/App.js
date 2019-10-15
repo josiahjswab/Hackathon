@@ -10,14 +10,14 @@ class App extends React.Component {
         };
         this.componentDidMount = this.componentDidMount.bind(this);
     }
- 
+
     componentDidMount() {
         axios.get('http://quotes.rest/qod.json')
         .then(response => {this.setState({ 
         inspire: response.data.contents.quotes[0].quote,
         inspireAuthor: response.data.contents.quotes[0].author,
         });
-        });    
+        });
     }
 
     render() {
