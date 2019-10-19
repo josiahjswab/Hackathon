@@ -8,10 +8,9 @@ app.use(express.static('dist'));
 app.use(express.static('public'));
 
 app.get('/api', (req, res) => {
-    axios.get(`https://api.kanye.rest`)
+    axios.get(`http://www.mocky.io/v2/5d5cba7e320000a5e4628f33?apikey=${process.env.APIKEY}`)
         .then((result) => {
             res.send(result.data);
-            console.log(result);
         })
         .catch((error) => {
             console.error(error);
