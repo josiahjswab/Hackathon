@@ -12,7 +12,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://quotes.rest/qod.json')
+        axios.get('https://quotes.rest/qod.json')
         .then(response => {this.setState({ 
         inspire: response.data.contents.quotes[0].quote,
         inspireAuthor: response.data.contents.quotes[0].author,
